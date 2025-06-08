@@ -1,0 +1,24 @@
+#function for back tracking
+def is_Valid(grid, row, col, num):
+    for i in range(9):
+        if grid[row][i] == num:
+            return False
+    
+    return True
+
+
+
+#grid for sudoku (0 is considered as no value)
+grid = [
+        [4, 0, 0, 0, 0, 5, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 1, 9, 8],
+        [3, 0, 0, 0, 8, 2, 4, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0, 8, 0],
+        [9, 0, 3, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 3, 0, 6, 7, 0],
+        [0, 5, 0, 0, 0, 9, 0, 0, 0],
+        [0, 0, 0, 2, 0, 0, 9, 0, 7],
+        [6, 4, 0, 3, 0, 0, 0, 0, 0],
+       ]
+
+
